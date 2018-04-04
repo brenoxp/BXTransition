@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller3-->
+        <scene sceneID="y44-8f-j8N">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="8QE-zk-N21" customClass="ViewController3" customModule="BXTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLS-Fp-t6H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-0P-bEV">
+                                <rect key="frame" x="121.5" y="323" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17855052495482338" green="0.25551798603000953" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="bfO-0P-bEV" firstAttribute="centerY" secondItem="YLS-Fp-t6H" secondAttribute="centerY" id="81p-uD-1Xc"/>
+                            <constraint firstItem="bfO-0P-bEV" firstAttribute="centerX" secondItem="YLS-Fp-t6H" secondAttribute="centerX" id="pZn-Jr-sg6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ocr-WK-grW"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ydf-Ce-me3" appends="YES" id="gaS-jE-Oob"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCS-ay-gob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ydf-Ce-me3">
+                    <connections>
+                        <action selector="pangGesture:" destination="8QE-zk-N21" id="FDx-b0-vE8"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-777" y="134"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="rZC-8B-Hla">
+            <objects>
+                <viewController storyboardIdentifier="ViewController4" id="Gz1-F4-PwE" customClass="ViewController4" customModule="BXTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WdE-Ur-bDC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bD9-6F-RWj">
+                                <rect key="frame" x="121.5" y="323" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33786891643570782" blue="0.9321377630297546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="bD9-6F-RWj" firstAttribute="centerY" secondItem="WdE-Ur-bDC" secondAttribute="centerY" id="KL0-v4-N93"/>
+                            <constraint firstItem="bD9-6F-RWj" firstAttribute="centerX" secondItem="WdE-Ur-bDC" secondAttribute="centerX" id="sgG-ts-3wy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jgc-1D-HZL"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="BAE-Zs-NJJ" appends="YES" id="aSK-lk-ovd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnc-af-xT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BAE-Zs-NJJ">
+                    <connections>
+                        <action selector="pangGesture:" destination="Gz1-F4-PwE" id="IK7-Up-XT5"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137" y="-634"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BXTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpv-GY-qVV">
+                                <rect key="frame" x="129" y="323" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.24525119419999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jpv-GY-qVV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9tb-l2-Rdj"/>
+                            <constraint firstItem="jpv-GY-qVV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KUE-H7-aX1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gu1-fu-Gmw" appends="YES" id="2Xt-yb-X3L"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gu1-fu-Gmw">
+                    <connections>
+                        <action selector="pangGesture:" destination="BYZ-38-t0r" id="cNj-Nq-LKh"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137" y="134"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Z0W-w2-C6a">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="f5c-Xl-Tp2" customClass="ViewController2" customModule="BXTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EYS-c4-dn8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaY-ev-Axj">
+                                <rect key="frame" x="124" y="323" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20923842580239427" green="1" blue="0.12647931232637843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="zaY-ev-Axj" firstAttribute="centerY" secondItem="EYS-c4-dn8" secondAttribute="centerY" id="wwh-9o-jMS"/>
+                            <constraint firstItem="zaY-ev-Axj" firstAttribute="centerX" secondItem="EYS-c4-dn8" secondAttribute="centerX" id="zKE-sz-bkk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q3u-Xy-Z1b"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gc8-wL-s0Y" appends="YES" id="mX3-GH-d4P"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yz5-P6-lS3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="gc8-wL-s0Y">
+                    <connections>
+                        <action selector="pangGesture:" destination="f5c-Xl-Tp2" id="K8U-Fe-PUd"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="137" y="852"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="Olz-VZ-E1N">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="HiN-2h-M4I" customClass="ViewController1" customModule="BXTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OPw-tY-0en">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Controller 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBN-nx-AFX">
+                                <rect key="frame" x="123" y="323" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.99613715895648103" blue="0.28158139027930251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="cBN-nx-AFX" firstAttribute="centerX" secondItem="OPw-tY-0en" secondAttribute="centerX" id="8Y2-T6-x9E"/>
+                            <constraint firstItem="cBN-nx-AFX" firstAttribute="centerY" secondItem="OPw-tY-0en" secondAttribute="centerY" id="uOx-g8-zCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TyN-Mc-rgf"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SJA-8Y-mhO" appends="YES" id="ize-So-nL0"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Go7-qd-Q1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="SJA-8Y-mhO">
+                    <connections>
+                        <action selector="pangGesture:" destination="HiN-2h-M4I" id="Rr6-20-tTR"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1031" y="134"/>
+        </scene>
+    </scenes>
+</document>
