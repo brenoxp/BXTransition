@@ -64,6 +64,10 @@ public class BXTransition: NSObject {
     return Direction.left
   }
   
+  public func set(angleDirection: Direction) {
+    self.angleDirection = angleDirection
+  }
+  
   func isDirectionAccepted(direction: Direction, directionsAccepted: [Direction]) -> Bool {
     return directionsAccepted.contains(direction)
   }
