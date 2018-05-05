@@ -1,5 +1,5 @@
 //
-//  ViewController2.swift
+//  ViewController1.swift
 //  BXTransition
 //
 //  Created by Breno Pinto on 09/02/18.
@@ -7,17 +7,18 @@
 //
 
 import UIKit
+import BXTransition
 
-class ViewController2: UIViewController {
+class ViewController1: UIViewController {
   var transition: BXTransition!
   let interactor = Interactor()
-  
+ 
   override func viewDidAppear(_ animated: Bool) {
     transitioningDelegate = self
-    
+
     transition = BXTransition(viewController: self)
     transition.interactor = interactor
-    transition.setDismiss(directionAccepted: .top)
+    transition.setDismiss(directionAccepted: .left)
   }
   
   @IBAction func pangGesture(_ sender: Any) {
@@ -26,7 +27,7 @@ class ViewController2: UIViewController {
   }
 }
 
-extension ViewController2: UIViewControllerTransitioningDelegate {
+extension ViewController1: UIViewControllerTransitioningDelegate {
   func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return transition
   }

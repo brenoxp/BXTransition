@@ -8,19 +8,19 @@
 
 import UIKit
 
-class Interactor: UIPercentDrivenInteractiveTransition {
-  var hasStarted = false
-  var shouldFinish = false
+public class Interactor: UIPercentDrivenInteractiveTransition {
+  public var hasStarted = false
+  public var shouldFinish = false
 }
 
-enum Direction {
+public enum Direction {
   case left   // 315 - 360 || 0 - 45
   case top    // 45  - 135
   case right  // 135 - 225
   case bottom // 225 - 315
 }
 
-class BXTransition: NSObject {
+public class BXTransition: NSObject {
   
   private var initialPosition: CGPoint?
   private var currentPosition: CGPoint?
@@ -41,9 +41,9 @@ class BXTransition: NSObject {
   
   private let viewController: UIViewController
   
-  var interactor: Interactor?
+  public var interactor: Interactor?
   
-  init(viewController: UIViewController) {
+  public init(viewController: UIViewController) {
     self.viewController = viewController
     super.init()
   }
@@ -68,7 +68,7 @@ class BXTransition: NSObject {
     return directionsAccepted.contains(direction)
   }
   
-  func panGesture(view: UIView, gesture: UIGestureRecognizer) {
+  public func panGesture(view: UIView, gesture: UIGestureRecognizer) {
     let translation = gesture.location(in: view)
     
     switch gesture.state {
@@ -198,7 +198,7 @@ class BXTransition: NSObject {
     return nil
   }
   
-  func set(viewController: UIViewController, forDirection direction: Direction) {
+  public func set(viewController: UIViewController, forDirection direction: Direction) {
     if (direction == .left) {
       vcLeft = viewController
     }
@@ -216,7 +216,7 @@ class BXTransition: NSObject {
     }
   }
   
-  func setDismiss(directionAccepted: Direction) {
+  public func setDismiss(directionAccepted: Direction) {
     self.dismissDirectionAccepted = directionAccepted
   }
   
@@ -242,11 +242,11 @@ class BXTransition: NSObject {
 }
 
 extension BXTransition: UIViewControllerAnimatedTransitioning {
-  func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+  public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
     return duration
   }
 
-  func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+  public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
     guard let angleDirection = self.angleDirection else { return }
     let containerView = transitionContext.containerView
     

@@ -1,0 +1,22 @@
+{
+  "name": "BXTransition",
+  "version": "0.1.0",
+  "summary": "A short description of BXTransition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/brenoxp2008@hotmail.com/BXTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "brenoxp2008@hotmail.com": "brenoxp2008@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/brenoxp2008@hotmail.com/BXTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BXTransition/Classes/**/*"
+}

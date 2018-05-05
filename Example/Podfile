@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'BXTransition_Example' do
+  pod 'BXTransition', :path => '../'
+end

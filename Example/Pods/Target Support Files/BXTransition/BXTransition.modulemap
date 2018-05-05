@@ -1,0 +1,6 @@
+framework module BXTransition {
+  umbrella header "BXTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}

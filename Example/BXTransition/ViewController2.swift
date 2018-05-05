@@ -1,5 +1,5 @@
 //
-//  ViewController4.swift
+//  ViewController2.swift
 //  BXTransition
 //
 //  Created by Breno Pinto on 09/02/18.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import BXTransition
 
-class ViewController4: UIViewController {
+class ViewController2: UIViewController {
   var transition: BXTransition!
   let interactor = Interactor()
   
@@ -17,7 +18,7 @@ class ViewController4: UIViewController {
     
     transition = BXTransition(viewController: self)
     transition.interactor = interactor
-    transition.setDismiss(directionAccepted: .bottom)
+    transition.setDismiss(directionAccepted: .top)
   }
   
   @IBAction func pangGesture(_ sender: Any) {
@@ -26,7 +27,7 @@ class ViewController4: UIViewController {
   }
 }
 
-extension ViewController4: UIViewControllerTransitioningDelegate {
+extension ViewController2: UIViewControllerTransitioningDelegate {
   func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return transition
   }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BXTransition
 
 class ViewController: UIViewController {
   
