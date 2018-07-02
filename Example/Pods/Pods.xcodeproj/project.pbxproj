@@ -28,10 +28,10 @@
 
 /* Begin PBXFileReference section */
 		012F0FB319891D001C2E810F55518A74 /* Pods-BXTransition_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BXTransition_Example-umbrella.h"; sourceTree = "<group>"; };
-		1DEAE9870B7D167E2A0D4A5605CDA766 /* Pods_BXTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BXTransition_Example.framework; path = "Pods-BXTransition_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DEAE9870B7D167E2A0D4A5605CDA766 /* Pods_BXTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BXTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA002D5B7409D0F1CB59D36437FCE63 /* Pods-BXTransition_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXTransition_Example.release.xcconfig"; sourceTree = "<group>"; };
 		394ECFDFF6629489900D0040395D56C5 /* Pods-BXTransition_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXTransition_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4C19329D89E5D50EDCABDDAE12622A79 /* BXTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BXTransition.modulemap; sourceTree = "<group>"; };
+		4C19329D89E5D50EDCABDDAE12622A79 /* BXTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BXTransition.modulemap; sourceTree = "<group>"; };
 		531B17E9572EF2A93A9186A57FBBFB8B /* Pods-BXTransition_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BXTransition_Example-resources.sh"; sourceTree = "<group>"; };
 		5C84B4B44B844EC42B62B1D501091E80 /* Pods-BXTransition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BXTransition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -40,10 +40,10 @@
 		7485576AA863FECE9BD9461EB80FDA45 /* BXTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BXTransition.swift; path = BXTransition/Classes/BXTransition.swift; sourceTree = "<group>"; };
 		799C33CCC2E51680E7A4DC355235682D /* Pods-BXTransition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BXTransition_Example-dummy.m"; sourceTree = "<group>"; };
 		7ABBA5704852B564C83477217273E6F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82EFC579F4948921AD2F4C2195D9987B /* BXTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BXTransition.framework; path = BXTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EFC579F4948921AD2F4C2195D9987B /* BXTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BXTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B8DFBC693A326A8C5857DE7D120AC /* Pods-BXTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BXTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		917B8595D5CD0791B0E098FB877B73C5 /* Pods-BXTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BXTransition_Example.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		917B8595D5CD0791B0E098FB877B73C5 /* Pods-BXTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BXTransition_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDE9DE6CEABA019558600B9A5FFEC0C2 /* BXTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BXTransition-umbrella.h"; sourceTree = "<group>"; };
 		E1C558525C60E60895E829E0783EBB15 /* BXTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BXTransition-dummy.m"; sourceTree = "<group>"; };
 		E374043344B8E74592ABE2F96FA3F4B1 /* BXTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BXTransition.xcconfig; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -358,6 +358,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -365,6 +366,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -452,6 +454,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -459,6 +462,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
