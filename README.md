@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+![Gif](https://github.com/brenoxp/BXTransition/blob/master/Example/images/BXTransition.gif?raw=true)
 
 ## Installation
 
@@ -22,7 +22,7 @@ pod 'BXTransition'
 
 ## Author
 
-brenoxp2008@hotmail.com, brenoxp2008@gmail.com
+brenoxp2008@gmail.com
 
 ## License
 
