@@ -31,7 +31,7 @@ public class BXTransition: NSObject {
   private var vcTop: UIViewController?
   private var vcBottom: UIViewController?
   
-  private var duration: TimeInterval = 0.5
+  private var duration: TimeInterval = 0.3
   private var angleDirection: Direction?
   
   private var showDirectionsAccepted = [Direction]()
@@ -289,7 +289,7 @@ extension BXTransition: UIViewControllerAnimatedTransitioning {
     
     let initialCenter = containerView.center
     
-    UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
+    UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0, options: .curveLinear, animations: {
       if (angleDirection == .left) {
         containerView.center = CGPoint(x: initialCenter.x + containerView.frame.width,
                                        y: initialCenter.y)
@@ -309,7 +309,6 @@ extension BXTransition: UIViewControllerAnimatedTransitioning {
         containerView.center = CGPoint(x: initialCenter.x,
                                        y: initialCenter.y - containerView.frame.height)
       }
-      
     }) { _ in
       toView.frame = CGRect(origin: CGPoint.zero, size: toView.frame.size)
       containerView.frame = CGRect(origin: CGPoint.zero, size: containerView.frame.size)
@@ -319,10 +318,6 @@ extension BXTransition: UIViewControllerAnimatedTransitioning {
         toView.removeFromSuperview()
       }
     }
-  }
-  
-  @objc func animationDidStop(context: UIViewControllerContextTransitioning) {
-    
   }
 }
 
