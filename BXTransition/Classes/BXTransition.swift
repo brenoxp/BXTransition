@@ -31,8 +31,8 @@ public class BXTransition: NSObject {
   private var vcTop: UIViewController?
   private var vcBottom: UIViewController?
   
-  private var duration: TimeInterval = 0.3
-  private var angleDirection: Direction?
+  fileprivate var duration: TimeInterval = 0.3
+  fileprivate var angleDirection: Direction?
   
   private var showDirectionsAccepted = [Direction]()
   private var dismissDirectionAccepted: Direction?
