@@ -11,6 +11,81 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ![Gif](https://github.com/brenoxp/BXTransition/blob/master/Example/images/BXTransition.gif?raw=true)
 
+## Usage - Present
+```swift
+import BXTransition
+
+class ViewController: UIViewController {
+  
+  var transition: BXTransition!
+  let interactor = Interactor()
+
+  override func viewDidLoad() {
+    
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    transition = BXTransition(viewController: self)
+    transition.interactor = interactor
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    
+    let viewController1 = storyboard.instantiateViewController(withIdentifier: "ViewController1")
+    viewController1.transitioningDelegate = self
+    transition.set(viewController: viewController1, forDirection: .right)
+  }
+  
+  @IBAction func pangGesture(_ sender: Any) {
+    guard let gesture = sender as? UIGestureRecognizer else { return }
+    transition.panGesture(view: view, gesture: gesture)
+  }
+}
+
+extension ViewController: UIViewControllerTransitioningDelegate {
+  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return transition
+  }
+  
+  func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    return interactor.hasStarted ? interactor : nil
+  }
+}
+```
+
+## Usage - Dismiss
+``` swift
+import BXTransition
+
+class ViewController1: UIViewController {
+  var transition: BXTransition!
+  let interactor = Interactor()
+ 
+  override func viewDidAppear(_ animated: Bool) {
+    transitioningDelegate = self
+
+    transition = BXTransition(viewController: self)
+    transition.interactor = interactor
+    transition.setDismiss(directionAccepted: .left)
+  }
+  
+  @IBAction func pangGesture(_ sender: Any) {
+    guard let gesture = sender as? UIGestureRecognizer else { return }
+    transition.panGesture(view: view, gesture: gesture)
+  }
+}
+
+extension ViewController1: UIViewControllerTransitioningDelegate {
+  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return transition
+  }
+  
+  func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    return interactor.hasStarted ? interactor : nil
+  }
+}
+```
+
+
 ## Installation
 
 BXTransition is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +97,7 @@ pod 'BXTransition'
 
 ## Author
 
-brenoxp2008@gmail.com
+Breno Xavier - brenoxp2008@gmail.com
 
 ## License
 
